@@ -1,31 +1,93 @@
-function fonksiyonum(){
+var i = false;
+var görünürYap = true;
 
 
+function fonksiyonum(){ // profil resmi tıklanınca
 
-   
-
-
-
-
+    
+    fonksiyonum222(); // resmi küçültüp büyütür
 
     var liste = document.getElementById("linkListesi");
+    
+    if (görünürYap)
+        {
+            görünürYap = false;
+            liste.style.display = "block";    
+        }
 
-    if(liste.classList.contains("inaktif")){
-        liste.classList.remove("inaktif");
-        liste.classList.add("aktif");
-    }
-    else if(liste.classList.contains("aktif"))
-    {
-        liste.classList.remove("aktif");
-        liste.classList.add("inaktif2");
-    }
+    liste.classList.toggle("aktif");    // link listesini açar ve kapatır
+    liste.classList.toggle("inaktif2");
+
+
+
+
+    var a = document.getElementById("isim");    
+    var b = document.getElementById("profill");
+
+
+    
+
+    a.classList.toggle("isimm");   // isim yazısının rengini değiştirir
+    a.classList.toggle("isimm2");
+
+
+// aşşağısı profil resminin çerçevesini değiştirir 
+
+    if(i)
+        { 
+            i = false;
+            b.style.borderColor = "#281b45";
+            b.classList.remove("borderShadowRed");
+        }
+    
     else
-    {
-        liste.classList.remove("inaktif2");
-        liste.classList.add("aktif");
+        {
+            b.style.borderColor = "red";
+            b.classList.add("borderShadowRed");
+            i = true;
+        }
 
+}
+
+
+function kirmiziYap(){  // eğer mouse profil resminin üzerine gelirse çerçevesini kırmızı yapar
+    
+
+
+    var a = document.getElementById("profill");
+
+    a.style.transform = "scale(1.1)";
+    
+    if(!i)
+        {
+            a.style.borderColor = "red";
+            
+            a.classList.add("borderShadowRed");
+            
+        }
+}
+
+function morYap(){
+
+    
+
+    var a = document.getElementById("profill");
+
+
+    a.style.transform = "scale(1)";
+    
+    if(!i){
+        a.style.borderColor = "#281b45";
         
+        a.classList.remove("borderShadowRed");
     }
+}
 
 
+function fonksiyonum222(){ // profil resmi tıklanınca
+    var b = document.getElementById("profill");
+    b.style.animation = "none";
+    b.offsetHeight;
+    b.style.animation = "rotate 0.9s ease-out";
+    
 }

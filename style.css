@@ -1,3 +1,56 @@
+
+.isimm{
+    
+    
+    
+
+    border-bottom: #000000 5px solid;
+    border-right: #000000 5px solid;
+    border-radius: 10px;
+    
+    
+    padding: 5px;
+    
+    
+    background-color: whitesmoke;
+
+    color: #000000;
+
+    transition: 1s;
+    
+    width: 150px;
+}
+
+.isimm2{
+    border-bottom: #ff0000 4px solid;
+    border-right: #ff0000 4px solid;
+    
+    
+    border-radius: 13px;
+
+    padding: 5px;
+    
+    
+    background-color: rgb(0, 0, 0);
+
+    transition: 1s;
+    
+    width: 150px;
+
+
+    color: white;
+}
+
+    
+
+#isim:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: red;
+}
+
+
+
 /*---------------------------------------container--------------------------------------------*/
 body{
     justify-content: center;
@@ -15,7 +68,7 @@ body{
 
     opacity: 0;
     transform: translateY(80px);
-    
+
     animation: aaa 1s forwards;
 
 
@@ -29,114 +82,189 @@ table{
     height: 100%;
     margin: 0;
     padding:0px;
-    
-    
+
+
 /*-----------------------------------------------------------------------------------*/
-    
+
 }
 
 .kısım1{
 
+
     width: 25%;
-    background-color: #f4f4f9;
-    border-right: red 2px dotted;  
+    background-color:#473079;
+    border-right:#000000 4px solid;
+    border-left: #000000 2px solid ;
+    border-top: #000000 1px solid;
+    border-bottom: #000000 1px solid;
+    box-shadow: 0 0 10px black;
+
+
 }
 
 .kısım2{
+
+
+
     width: 75%;
-    
+
+    background-color:smokewhite;
+    vertical-align: top;
+    font-family: bradley hand , cursive;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    font-size: 14px;
+
 }
 
 
 /*------------------------------------------pp-----------------------------------------*/
 .pp{
-    border: red 2px solid;
+
     width: 200px;
-    height: 350px;
+    height: 400px;
     padding: 0px;
 }
 
+.borderShadowRed{
+    box-shadow: 0 0 10px red;
+}
 
+table tr td.pp #profil img{
+    width: 150px;
+    height: 150px;
 
-table tr td.pp #profil img{ 
-    width: 120px;
-    height: 120px;
+    cursor: pointer;
+    
+    
+
 
     display: block;
-    
+
 
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     transition: 1s;
-    border: rgb(255, 0, 0) 5px solid;
-   
-    border-radius: 50%;
-    padding: 0px;
-    
-    }
-    
+    border-right: #281b45 6px solid;
+    border-bottom: #281b45 6px solid;
 
-    
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+
+
+
+    padding: 0px;
+
+    }
+
+
+
 
 table tr td.pp #profil img:hover {
-    
-    transform:scale(1.2) rotate(-360deg);
-    border: transparent 5px solid;
-    
-
-    
-    
+    transform: rotate(0);
+    transform:scale(1.1px);
+    border-right: red 6px solid;
+    border-bottom: red 6px solid;
 }
 
 
+
+#linkListesi{
+    margin-top: 30px;
+    
+}
 
 /*--------------------------------------fonksiyon için---------------------------------------------*/
 
 .inaktif{
-    
+
     display: none;
-   
-    
+
+
 }
+
 .inaktif2{
     animation: aaa3 0.5s ease-out forwards;
     
-    
+
 }
 
 .aktif{
-    
+
     display: block;
-    
+
     animation: aaa2 1s ease-out forwards;
 }
 
 /*-----------------------------------------------------------------------------------*/
 
 
+/*---------------------------------------linklerListeler--------------------------------------------*/
 
 
 
 table tr td.pp ul li img{
-    width: 20px;                               
+    width: 20px;
     height: 20px;
 }
 
+
+
 table tr td.pp ul li a{
     text-decoration: none;
-    color: red;
+    color: rgb(255, 255, 255);
+    transition: 1s;
+    width: 90%;
+    background-color: black;
+    border-bottom-right-radius: 10px;
+
+    padding-bottom: 5px;
+
+    border-bottom: #352756 4px solid;
+    border-right: #352756 4px solid;
+    border-radius: 10px;
 }
 
 table tr td.pp ul li{
-    list-style-type: none;
+    list-style-type: disc;
     margin-top: 10px;
     margin-left: 0px;
-    padding: 0px;
+    padding: 1px;
     display: flex;
-    
+    margin-right: 10px;
     align-items: center;
+    transition: 1s;
+    
+
+
 }
+
+
+
+
+table tr td.pp ul li a:hover{
+    transform: scale(1.2);
+    color:#f4f4f9;
+    background-color: rgb(255, 0, 0);
+    border-right: rgb(0, 0, 0) 4px solid;
+    border-bottom: rgb(0, 0, 0) 4px solid;
+
+}
+/*-----------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
 
 
 /*-----------------------------------------animasyonlar------------------------------------------*/
@@ -150,7 +278,7 @@ table tr td.pp ul li{
 @keyframes aaa2 {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-70px);
     }
     to{
         opacity: 1;
@@ -161,9 +289,27 @@ table tr td.pp ul li{
     from {
         opacity: 1;
         transform: translateY(0);
+        
     }
     to{
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-70px);
+        display: none;
     }
+    
+}
+
+
+
+@keyframes rotate {
+    35% {
+        transform: scale(0.9);
+    }
+    75%{
+        transform: scale(0.9);
+    }
+    100% {
+        transform: rotate(1.2);
+    }
+
 }
