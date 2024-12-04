@@ -23,6 +23,9 @@ function fonksiyonum(){ // profil resmi tıklanınca
 
     var a = document.getElementById("isim");    
     var b = document.getElementById("profill");
+    var c = document.getElementById("pp");
+
+    
 
 
     
@@ -88,6 +91,6 @@ function fonksiyonum222(){ // profil resmi tıklanınca
     var b = document.getElementById("profill");
     b.style.animation = "none";
     b.offsetHeight;
-    b.style.animation = "rotate 0.9s ease-out";
+    b.style.animation = "rotate 0.15s ease-out";
     
 }

@@ -1,3 +1,18 @@
+.dilListeleri li{
+    
+    border-bottom: 6px solid black;
+    border-right: 6px solid black;
+    border-bottom-left-radius: 10px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+
+
+.agga{
+    height: 200px;
+}
+
 
 .isimm{
     
@@ -18,7 +33,7 @@
 
     transition: 1s;
     
-    width: 150px;
+    width: 80%;
 }
 
 .isimm2{
@@ -35,7 +50,7 @@
 
     transition: 1s;
     
-    width: 150px;
+    width: 80%;
 
 
     color: white;
@@ -61,7 +76,7 @@ body{
 .a4{
     margin-top: 5%;
     width: 800px;
-    height: 1000px;
+    height: 1200px;
     border: 1px solid;
     box-shadow:  0 0 100px rgba(0, 0, 0, 0.4);
     background-color: #ffffff;
@@ -90,7 +105,7 @@ table{
 
 .kısım1{
 
-
+    
     width: 25%;
     background-color:#473079;
     border-right:#000000 4px solid;
@@ -112,7 +127,7 @@ table{
     vertical-align: top;
     font-family: bradley hand , cursive;
     /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
-    font-size: 14px;
+    font-size: 13px;
 
 }
 
@@ -120,18 +135,23 @@ table{
 /*------------------------------------------pp-----------------------------------------*/
 .pp{
 
-    width: 200px;
+    width: auto;
     height: 400px;
     padding: 0px;
+   
 }
+
+
 
 .borderShadowRed{
     box-shadow: 0 0 10px red;
 }
 
 table tr td.pp #profil img{
-    width: 150px;
-    height: 150px;
+
+
+    width: 80%;
+    
 
     cursor: pointer;
     
@@ -148,10 +168,7 @@ table tr td.pp #profil img{
     border-right: #281b45 6px solid;
     border-bottom: #281b45 6px solid;
 
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-top-left-radius: 50%;
+    border-radius: 50%;
 
 
 
@@ -212,7 +229,7 @@ table tr td.pp ul li img{
 
 
 
-table tr td.pp ul li a{
+ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     transition: 1s;
@@ -227,7 +244,7 @@ table tr td.pp ul li a{
     border-radius: 10px;
 }
 
-table tr td.pp ul li{
+ul li{
     list-style-type: disc;
     margin-top: 10px;
     margin-left: 0px;
@@ -244,7 +261,7 @@ table tr td.pp ul li{
 
 
 
-table tr td.pp ul li a:hover{
+ul li a:hover{
     transform: scale(1.2);
     color:#f4f4f9;
     background-color: rgb(255, 0, 0);
